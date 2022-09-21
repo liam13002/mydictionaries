@@ -5,13 +5,13 @@ infile = open("sometext.txt", "r")
 freqDict = dict()
   
 
-for line in infile:
+for w in infile:
     
-    line = line.replace(',',' ')
-    line = line.replace('.', ' ')
-    line = line.lower()
+    w = w.replace(',',' ')
+    w = w.replace('.', ' ')
+    w = w.lower()
     
-    words = line.split(" ")
+    words = w.split(" ")
                              
     for word in words:
         
