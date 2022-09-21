@@ -1,4 +1,4 @@
-encryption_library = {'A':'!','B':'@','C':'#','D':'$','E':'%','F':'^','G':'&','H':'*','I':'(',
+codes = {'A':'!','B':'@','C':'#','D':'$','E':'%','F':'^','G':'&','H':'*','I':'(',
                       'J':')','K':'-','L':'_','M':'+','N':'=','O':'`','P':'~','Q':'{','R':'[',
                       'S':'}','T':']','U':':','V':';','W':'"','X':'<','Y':'>','Z':'0','a':'1',
                       'b':'2','c':'3','d':'4','e':'5','f':'6','g':'7','h':'8','i':'9','j':'a',
@@ -11,8 +11,8 @@ infile.close()
 encrypt_file = open('encrypted.txt','w')
 
 for letter in reader:
-    if letter in encryption_library:
-        encrypt_file.write(encryption_library[letter])
+    if letter in codes:
+        encrypt_file.write(codes[letter])
     else:
         encrypt_file.write(letter)
         
