@@ -6,18 +6,18 @@ person["spouse"] = "Edna"
 person["children"] = ["Ralph", "Betty", "Joey"]
 person["pets"] = {"dog": "Fido", "cat": "Sox"}
 
-#print(person)
+print(person)
 
 
-#print(person['children'])
+print(person['children'])
 
 print(person['children'][1])
 
-#print(person['pets']['cat'])
+print(person['pets']['cat'])
 
-#for child in person['children']:
-#    print(child)
+for child in person['children']:
+    print(child)
 
-#for pet in person['pets']:
-#    print (person['pets'][pet])   
+for pet in person['pets']:
+    print (person['pets'][pet])   
     
