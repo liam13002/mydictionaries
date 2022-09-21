@@ -6,8 +6,9 @@ codes = {'A':'!','B':'@','C':'#','D':'$','E':'%','F':'^','G':'&','H':'*','I':'('
                       't':'k','u':'l','v':'m','w':'n','x':'o','y':'p','z':'q'}
 
 infile = open('info_security.txt','r')
+
 reader = infile.read()    
-infile.close()
+
 encrypt_file = open('encrypted.txt','w')
 
 for letter in reader:
